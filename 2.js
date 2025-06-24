@@ -8,4 +8,32 @@ function reverseWords(sentence) {
      
 
 
+}var food = [
+{
+type: 'fruit',
+name: 'Banana'
+}, {
+type: 'vegetable',
+name: 'Lettuce'
+}, {
+type: 'fruit',
+name: 'Strawberry'
+}, {
+type: 'nut',
+name: 'Brazil'
+}, {
+type: 'fruit',
+name: 'Orange'
+}, {
+type: 'vegetable',
+name: 'Onion'
+}, {
+type: 'nut',
+name: 'Peanut'
 }
+];
+
+
+let few=food.filter(item => item.type === 'fruit').map(item => item.name).sort();
+
+ console.log(few);
